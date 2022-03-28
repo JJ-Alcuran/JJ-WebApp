@@ -1,27 +1,18 @@
-#container {
-  text-align: center;
+ #homepage-header-toolbar {
+  background-color: #3cb371;
+}
 
+.homepage-header-button {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 2%;
+  bottom: 15%;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card-title, ion-card-subtitle, ion-content {
+  text-align: center;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+ion-footer {
+  text-align: center;
+  background-color: #f2f3f4;
 }
