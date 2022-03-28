@@ -1,7 +1,26 @@
+.login-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ion-button[color=dark] {
   text-transform: initial;
 }
 
-ion-content {
-  --background: var(--ion-color-success);
+// ion-content {
+//   --background: var(--ion-color-success);
+// }
+
+#banner-image {
+  width: 100%;
+  margin: 0% !important;
+  text-align: center;
+}
+
+#login-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-size: 4em;
 }

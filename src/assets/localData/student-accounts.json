@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "firstname": "ELBERT",
+    "middlename": "LAIÑO",
+    "lastname": "CARANDANG",
+    "address": "168 Sitio Ilaya, Masalukot 3, Candelaria, Quezon 4323",
+    "contact_number": "09123456789",
+    "email": "admin@saferoads.ph",
+    "password": "12345",
+    "validators": true,
+    "minLength": 20
+  },
+
+  {
+    "id": 2,
+    "firstname": "PATRICK",
+    "middlename": "QUIZON",
+    "lastname": "AMBER",
+    "address": "120 villa monique bolante 1, pinagbuhatan pasig city, Metro Manila (East) 1602",
+    "contact_number": "09123456789",
+    "email": "patrickqamber@gmail.com",
+    "password": "12345",
+    "validators": true,
+    "minLength": 20
+  },
+
+  {
+    "id": 3,
+    "firstname": "JJ",
+    "middlename": " ",
+    "lastname": "Alcuran",
+    "address": "143 Sitio Central, Bulakin, Tiaong, Quezon 4325",
+    "contact_number": "09123456789",
+    "email": "jj.alcuran@gmail.com",
+    "password": "12345",
+    "validators": true,
+    "minLength": 20
+  },
+
+  {
+    "id": 4,
+    "firstname": "admin",
+    "middlename": " ",
+    "lastname": "SafeRoadsPH",
+    "address": "Complete Address",
+    "contact_number": "Contact No.",
+    "email": "Email",
+    "password": "Password",
+    "validators": true,
+    "minLength": 20
+  }
+]
