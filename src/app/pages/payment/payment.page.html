@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Control Panel &nbsp; > &nbsp; Student-List</ion-title>
+    <ion-title>Control Panel &nbsp; > &nbsp; Payment</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -32,28 +32,18 @@
   <ion-list>
     <ion-item>
       <ion-label>
-        <h1>Students List</h1>
+        <h1>Payments List</h1>
       </ion-label>
     </ion-item>
   </ion-list>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col size="1">ID No.</ion-col>
-      <ion-col size="2">Complete Name</ion-col>
-      <ion-col size="2">Email</ion-col>
-      <ion-col size="2">Password</ion-col>
-      <ion-col size="2">Complete Adress</ion-col>
-      <ion-col size="2">Contact No.</ion-col>
-    </ion-row>
-
-    <ion-row *ngFor="let item of data">
-      <ion-col size="1">{{ item.id }}</ion-col>
-      <ion-col size="2"> {{ item.lastname }}, {{ item.firstname }} {{ item.middlename }}</ion-col>
-      <ion-col size="2"> {{ item.email }}</ion-col>
-      <ion-col size="2"> {{ item.password }}</ion-col>
-      <ion-col size="2"> {{ item.address }}</ion-col>
-      <ion-col size="2"> {{ item.contact_number }}</ion-col>
-    </ion-row>
-  </ion-grid>
+  <ion-card *ngFor="let item of data">
+      <ion-row id="student-payment-details">
+        <h4 id="payment-name">{{ item.lastname }}, {{ item.firstname }} {{ item.middlename }}</h4> <br>
+        Email: {{ item.email }} <br>
+        Amount paid: {{ item.amount }} <br>
+        Payment date: {{ item.payment_date }} <br>
+        Status: {{ item.status }}
+      </ion-row>
+  </ion-card>
 </ion-content>

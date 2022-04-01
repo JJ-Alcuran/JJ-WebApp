@@ -31,6 +31,10 @@ const routes: Routes = [
   {
     path: 'student-list',
     loadChildren: () => import('./pages/student-list/student-list.module').then( m => m.StudentListPageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./pages/payment/payment.module').then( m => m.PaymentPageModule)
   }
 ];
 

@@ -34,4 +34,8 @@ export class StudentListPage implements OnInit {
     this.router.navigate(['student-list']);
   }
 
+  payment() {
+            this.router.navigate(['payment']);
+          }
+
 }
