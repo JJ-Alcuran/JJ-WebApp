@@ -1,0 +1,20 @@
+
+
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="success">
+      <img src="assets/images/SafeRoadsPH-Menu-Logo.png" id="menu-image" slot="start"/>
+      <ion-button color="danger" fill="clear" slot="end" (click)="closeMenu()"><strong>X</strong></ion-button>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <img src="assets/images/SafeRoadsPH-Banner.png" id="banner-image" />
+    <ion-list>
+      <ion-item button (click)="dashboard()">Dashboard</ion-item>
+      <ion-item>Student List</ion-item>
+      <ion-item>Payment</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>

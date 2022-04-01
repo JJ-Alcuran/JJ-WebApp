@@ -1,17 +1,38 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-title><b>Dashboard</b></ion-title>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+    <ion-title>Control Panel</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!--want to use this as my component sidemenu but i cant access it <app-sidemenu></app-sidemenu>-->
+<ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="success">
+      <img src="assets/images/SafeRoadsPH-Menu-Logo.png" id="menu-image" slot="start"/>
+      <ion-button color="danger" fill="clear" slot="end" (click)="closeMenu()"><strong>X</strong></ion-button>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <img src="assets/images/SafeRoadsPH-Banner.png" id="banner-image" />
+    <ion-list>
+      <ion-item button (click)="dashboard()">Dashboard</ion-item>
+      <ion-item button (click)="studentList()">Student List</ion-item>
+      <ion-item>Payment</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-router-outlet id="main"></ion-router-outlet>
+
 <ion-content>
+
   <ion-list>
     <ion-item>
       <ion-label>
-        <h1>Student List</h1>
+        <h1>Students List</h1>
       </ion-label>
     </ion-item>
   </ion-list>
@@ -35,7 +56,4 @@
       <ion-col size="2"> {{ item.contact_number }}</ion-col>
     </ion-row>
   </ion-grid>
-
-
 </ion-content>
-
